@@ -1,0 +1,224 @@
+$date
+	Sun Apr 13 19:18:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module risc_cpu_tb $end
+$var wire 8 ! data [7:0] $end
+$var wire 1 " halt $end
+$var wire 1 # wr $end
+$var wire 1 $ rom_en $end
+$var wire 1 % rd $end
+$var wire 1 & ram_en $end
+$var wire 13 ' addr [12:0] $end
+$var reg 1 ( clk $end
+$var reg 13 ) ir_addr [12:0] $end
+$var reg 25 * mnemonic [24:0] $end
+$var reg 13 + pc_addr [12:0] $end
+$var reg 1 , rst_n $end
+$var integer 32 - test [31:0] $end
+$scope module t_addr_decode $end
+$var wire 13 . addr [12:0] $end
+$var reg 1 & ram_en $end
+$var reg 1 $ rom_en $end
+$upscope $end
+$scope module t_cpu $end
+$var wire 1 ( clk $end
+$var wire 8 / data [7:0] $end
+$var wire 1 , rst_n $end
+$var wire 1 0 zero $end
+$var wire 1 # wr $end
+$var wire 1 % rd $end
+$var wire 1 1 pc_inc $end
+$var wire 13 2 pc_addr [12:0] $end
+$var wire 3 3 operation [2:0] $end
+$var wire 1 4 module_clk $end
+$var wire 1 5 load_pc $end
+$var wire 1 6 load_ir $end
+$var wire 1 7 load_acc $end
+$var wire 13 8 ir_addr [12:0] $end
+$var wire 1 9 halt $end
+$var wire 1 : fetch $end
+$var wire 1 ; datacontrol_en $end
+$var wire 8 < alu_out [7:0] $end
+$var wire 1 = alu_en $end
+$var wire 13 > addr [12:0] $end
+$var wire 8 ? accum [7:0] $end
+$scope module accumulator1 $end
+$var wire 1 , rst_n $end
+$var wire 1 7 en $end
+$var wire 8 @ data [7:0] $end
+$var wire 1 4 clk $end
+$var reg 8 A accum [7:0] $end
+$upscope $end
+$scope module clock_manager1 $end
+$var wire 1 ( clk $end
+$var wire 1 4 module_clk $end
+$var wire 1 , rst_n $end
+$var reg 1 = alu_en $end
+$var reg 1 : fetch $end
+$var reg 8 B next_state [7:0] $end
+$var reg 8 C state [7:0] $end
+$upscope $end
+$scope module command_register1 $end
+$var wire 1 4 clk $end
+$var wire 8 D data [7:0] $end
+$var wire 1 , rst_n $end
+$var wire 3 E operation [2:0] $end
+$var wire 13 F ir_addr [12:0] $end
+$var wire 1 6 en $end
+$var reg 16 G cmd_reg [15:0] $end
+$var reg 16 H state [15:0] $end
+$upscope $end
+$scope module condition_control1 $end
+$var wire 1 4 clk $end
+$var wire 1 : en $end
+$var wire 3 I operation [2:0] $end
+$var wire 1 , rst_n $end
+$var wire 1 0 zero $end
+$var reg 1 ; datacontrol_en $end
+$var reg 1 J ena $end
+$var reg 1 9 halt $end
+$var reg 1 7 load_acc $end
+$var reg 1 6 load_ir $end
+$var reg 1 5 load_pc $end
+$var reg 8 K next_state [7:0] $end
+$var reg 1 1 pc_inc $end
+$var reg 1 % rd $end
+$var reg 8 L state [7:0] $end
+$var reg 1 # wr $end
+$scope task ctl_cycle $end
+$upscope $end
+$upscope $end
+$scope module data_controller1 $end
+$var wire 8 M data_out [7:0] $end
+$var wire 1 ; en $end
+$var wire 8 N data_in [7:0] $end
+$upscope $end
+$scope module m_adr $end
+$var wire 1 : fetch $end
+$var wire 13 O ir_addr [12:0] $end
+$var wire 13 P pc_addr [12:0] $end
+$var wire 13 Q addr [12:0] $end
+$upscope $end
+$scope module m_alu $end
+$var wire 8 R accum [7:0] $end
+$var wire 1 4 clk $end
+$var wire 8 S data [7:0] $end
+$var wire 1 = en $end
+$var wire 3 T operation [2:0] $end
+$var wire 1 , rst_n $end
+$var wire 1 0 zero $end
+$var reg 8 U alu_out [7:0] $end
+$upscope $end
+$scope module program_counter1 $end
+$var wire 13 V ir_addr [12:0] $end
+$var wire 1 5 load_pc $end
+$var wire 1 1 pc_inc $end
+$var wire 1 , rst_n $end
+$var reg 13 W pc_addr [12:0] $end
+$upscope $end
+$upscope $end
+$scope module t_ram $end
+$var wire 10 X addr [9:0] $end
+$var wire 8 Y data [7:0] $end
+$var wire 1 & en $end
+$var wire 1 % rd $end
+$var wire 1 # wr $end
+$upscope $end
+$scope module t_rom $end
+$var wire 13 Z addr [12:0] $end
+$var wire 8 [ data [7:0] $end
+$var wire 1 $ en $end
+$var wire 1 % rd $end
+$upscope $end
+$scope begin MONITOR $end
+$upscope $end
+$scope task display_debug_message $end
+$upscope $end
+$scope task sys_reset $end
+$upscope $end
+$scope task test1 $end
+$upscope $end
+$scope task test2 $end
+$upscope $end
+$scope task test3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#122183000
+$dumpvars
+bz [
+b0 Z
+bz Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+bz S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+bz M
+b1 L
+b10 K
+0J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+bz D
+b100 C
+b1000 B
+b0 A
+b0 @
+b0 ?
+b0 >
+0=
+b0 <
+0;
+0:
+09
+b0 8
+07
+06
+05
+04
+b0 3
+b0 2
+01
+10
+bz /
+b0 .
+b11 -
+1,
+b100000 +
+b10010000100110001010100 *
+b0 )
+0(
+b0 '
+0&
+0%
+1$
+0#
+z"
+bz !
+$end
+#122200000
+b10000 B
+b1000 C
+1:
+14
+1(
+#122250000
+04
+0(
+#122283000
