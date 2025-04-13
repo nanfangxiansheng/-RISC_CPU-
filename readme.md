@@ -6,7 +6,7 @@
 
 建议在vscode这款广泛使用的编辑器中执行命令，可以在terminal终端中输入下面的指令，为了方便高亮代码，可以安装下面的插件：
 
-
+![-RISC_CPU-/verilog.png at main · nanfangxiansheng/-RISC_CPU-](https://github.com/nanfangxiansheng/-RISC_CPU-/blob/main/verilog.png)
 
 iverilog编译命令为（iverilog是一个开源的verilog编译器。采用WSL2虚拟机安装iverilog或者直接win安装iverilog和gtkwave，教程参考网上，比较众多）：
 
